@@ -1,0 +1,222 @@
+Teoretické Základy informačních technologií:
+
+DISK1:
+
+1. Výroková logika, formule, pravdivost, vyplývání
+2. Booleovské funkce, funkčně úplné systémy
+3. Úplné konjunktivní a disjunktivní normální formy
+4. Množiny, monižonové operace, potenční množina, kartézský součin, číselné a nespočetné množniny
+5. Relace, binární relace a jejich reprezentace, operace s relacemi
+6. Funkce (zobrazení) a jejich vlastnosti
+7. Binární relace na množině a jejich vlastnosti
+8. Ekvivalence a rozklady
+9. Uspořádání, Hasseovy diagramy
+10. Permutace, variace, kombinace
+11. Pravděpodobnost, Laplaceova definice, pravděpodobností prostor, náhodná veličina, střední hodnota
+12. Indukce a rekurze, matematická indukce a její varianty
+13. Orientované a neorientované grafy, základní pojmy
+14. Hledání nejkratší cesty, Dijkstrův algoritmus
+15. Minimální kostra grafu, Kruskalův algoritmus
+16. Stromy, kořenové stromy, vztahy mezi výškou, počtem vrcholů a počtem listů
+
+0/16 0%
+
+IMAT1:
+
+1. Matice, operace s maticemi, hodnost, determinant
+2. Vektorové prostory podprostory, báze a dimenze, matice přechodu
+3. Eukleidovské vektorové prostory, ortogonální a ortonormální báze, Schwarzova nerovnost, Schmidtova ortogonalizační metoda
+4. Soustavy lineárních rovnic, Frobeniova věta, Gaussova eliminační metoda, Cramerovo pravidlo
+5. Lineární zobrazení a transformace a jejich matice
+
+0/5 0%
+
+IMAT2:
+
+1. Funkce jedné reálné proměnné, základní vlastnosti
+2. Posloupnosti a jejich limity, limes superior, limes inferior
+3. Limita funkce včetně nevlastních, jednostranné limity
+4. Spojitost funkce: spojitost v bodě, spojitost na intervalu
+5. Vlastnosti spojitých funkcí, spojitost složené a inverzní funkce
+6. Derivace funkce a její geometrický význam
+7. Pravidla pro derivování funkce, derivace složené funkce, derivace inverzní funkce, derivace elementárních funkcí
+8. Průběh funkce: základní věty diferenciálního počtu, extrémy určitý funkce, konvexní a konkávní křivky, asymptoty
+9. Neurčitý Integrál a metody jeho výpočtu
+10. Riemannův určitý integrál: definice, základní věta integrálního počtu, metody výpočtu
+11. Geometrická interpretace určitého integrálu
+
+0/11 0%
+
+ALGO:
+
+1. Algoritmus, problém, časová složitost algoritmu v nejhorším a průměrném případě
+2. O-notace a růst funkcí, definice, vlastnosti, příklady
+3. Lineární datové struktury: Seznam, Zásobník, Fronta
+4. Problém třídění, rozdělení třídících algoritmů, dolní mez složitosti, třídění porovnáváním
+5. Základní algoritmy třídění: insert sort, select sort, bubble sort, quick sort, merge sort, heap sort, counting sort, radix sort, bucket
+6. Vnější třídění
+7. Pořádková statistika
+
+0/7 0%
+
+ZADS:
+
+1. Vyhledávání v lineárních datových strukturách
+2. Binární vyhledávací stromy, operace a jejich složitost
+3. AVL stromy, operace, složitost
+4. B stromy, operace a jejich složitost.
+5. Hashovací tabulky, metody řešení kolizí
+6. Základní grafové algoritmy: průchod do šířky, průchod do hloubky, topologické uspořádání
+
+0/6 0%
+
+0/45 0%
+
+Informační technologie:
+
+OS1 a OS2:
+
+1. Operační systém, architektura, poskytovaná rozhraní
+2. Vykonávání programu a proces překladu
+3. Správa procesoru: procesy a vlákna, plánování jejich běhu, komunikace a synchronizace
+4. Problém uváznutí, detekce metody předcházení
+5. Správa operační paměti: Segmentace, stránkování, virtuální paměť 
+6. Práce se I/O zařízení, ovladače
+7. Správa diskového prostoru: oddíly, souborové systémy, zajištění konzistence dat
+
+0/7 0%
+
+DATAB:
+
+1. Relační model databáze: relace, atributy, n-tice, relační proměnné
+2. Operace s relacemi: sjednocení, prúnik, rozdíl, restrikce, projekce, přirozené spojení, přejmenování atributů
+3. Výraz SELECT v SQL
+4. Integrita dat: primární a cizí klíč
+5. Dokumentov model databáze: dokumenty, kolekce, atomické hodnoty, pole
+6. Základy práce v MongoDB: identifikátor dokumentu, operátory v dotazech implicitní operátory a dotazy na vnořené dokumenty
+7. Fulltextové vyhledávání v Elasticsearch: převod textu na tokeny, základní dotazy, skore zásahu, mapování typů v indexu
+8. Levenštejnova vzdálenost a přibližné vyhledávání
+
+0/8 0%
+
+UNIXS:
+
+1. Unixové operační systémy (UNIX, Linux), uživatelská prostředí a nápovědy
+2. Unixové systémy souborů a procesů, základní programy
+3. Příkazový interpret (shell), vstup a výstup programu a roura v unixových systémech
+4. Text a regulární výrazy
+5. Zpracování textu v unixových OS: základní utility, grep, sed, awk
+
+0/5 0%
+
+STRUP:
+
+1. Architektury a princip činnosti počítače
+2. Čiselné soustavy
+3. Binární logika, logické operace a jejich vlastnosti, funkce a jejich úpravy, logické obvody
+4. Reprezentace čísel a znaků v počítači
+5. Detekční a samoopravné kody
+6. Hardware osobního počítače: základní deska, procesory, čipst, instrukce, vnitřní a vnější paměti, ostatní zařízení
+
+0/6 0%
+
+POS1 a POS2:
+
+1. Počítačové sítě, jejich služby a architektury
+2. Ethernet: přepínač, použití média, linkový rámec
+3. Protokol IP: paket, adresy a podsítě, směrování
+4. Protokoly TCP a UDP: spojení a řízení toku dat
+5. Systém DNS
+6. Aplikační služby a tvorba síťových aplikací
+7. Bezpečnost počítačových sítí
+8. Bezdrátové sítě: režimy, přenosové médium, problémy, bezpečnost
+9. Wi-Fi: standardy, access point, použití média, linkový rámec, zabezpečení
+10. NAT: účel, typy, ptoblémy
+11. IPv6: vlastnosti, paket, adresy
+
+0/11 0%
+
+WEB:
+
+1. Architektura webové stránky
+2. Syntaxe a sémantika HTML a CSS
+3. HTML struktura webové stránky
+4. Box model
+5. Dědičnost a kaskáda
+6. Základy správného psaní CSS kódů: typické chyby a metodiky
+7. Layout webové stránky: grid, flexbox, pozicování
+8. Responzívní design
+9. Základní HTML elementy a jejich vizualizace
+10. Analýza kvality webové stránky
+11. Klientský JavaScript
+
+0/11 0%
+
+INFOS:
+
+1. Systém: struktura, okolí, hranice, vstup a výstup, vlastnosti a klasifikace systémů
+2. Základní pojmy informačních systému: data, infomace, informační systém
+3. Architektury informačních systémů: globální, vrstvená
+4. Tvorba informačních systémů: softwarový proces, metodika vývoje, analýza systému
+5. Podnikové informační systémy: popis, funkcionalita PIS-ERB, ERP II
+6. Business Intelligence: datový pohled na PIS vs analytické reporty, datový sklad, OLAP
+7. (Může být Testování, podle Janoštíka častá záchranná otázka)
+
+0/7 0%
+
+0/55 0%
+
+Programovací jazyky a programování:
+
+Python:
+
+1. Řízení vykonávání programu v jazyce Python: bloky, cykly, větvení, funkce
+2. Výrazy a jejich vyhodnocování v jazyce Python
+3. Základní datové typy v jazyce Python
+4. Základy systému vyjímek v jazyce Python
+5. Typy chyb v jejich hledání v jazyce Python
+6. Práce se soubory v jazyce Python
+7. Binární data v jazyce Python
+8. Moduly v jazyce Python a jejich importování
+
+0/8 0%
+
+ZPP:
+
+1. Základy objektového programování: třídy, objekty, zasílání zpráv
+2. Principy objektového programování: zapouzdření, polymorfismus a dědičnost
+3. Události v objektovém programování
+4. Funkce vyšších řádů: mpaování, filtrování, redukce a anonymní funkce
+5. Rekurze a rekurzivní datové struktury (spojové seznamy, stromy)
+6. Iterátory a generátory
+7. Synchronizace vláken: problém kritické sekce, zámky, semafory, Producenti a konzumenti
+8. Večeřící filozofové
+
+0/8 0%
+
+Jazyk C:
+
+1. Přehled typového systému C
+2. Principy správy paměti v C
+3. Principy adresování a práce s pointery v C
+4. Typy chyb a jejich hledání v jazyce C
+5. Organizace kódu v jazyce C
+6. Zařazení jazyka C mezi ostatní jazyky, výhody a nevýhody
+
+0/6 0%
+
+WEBA:
+
+1. Webové aplikace a přehled technologií používaných při jejich tvorbě
+2. Architektura webové aplikace a problematika škálovatelnosti
+3. Zpracování HTTP požadavků: předávání dat mezi webovým a aplikačním serverem,příklady realizace
+4. REST API: popis a příklady realizace
+5. JavaScript na webovém frontendu a jeho možnosti
+6. Technologie AJAX a její použití
+7. Knihovna React: charakteristika, použití
+8. Možnosti tvorby nativní apliací pomocí webových technologií
+9. Node.js: charakteristika použití
+
+0/9 0%
+
+0/31 0%
