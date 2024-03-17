@@ -1,0 +1,51 @@
+1. slide:
+
+představit sebe, bakalářskou práci a vedoucího práce
+
+2. slide: 
+ 
+popsat co budu představovat
+
+3. slide:
+
+říct něco o diagramech datových toků
+
+4. slide: 
+
+popsat prvky mimo šipky
+
+5. slide: 
+
+popsat datové toky
+
+6. slide 
+
+popsat požadovanou funkcionalitu
+
+7. slide
+
+říct něco málo o použitých technologiích
+
+8. slide 
+
+popsat architekturu:
+
+model - ?? quadstrom zmínit, zmínit že zde se nachází ty data
+controller - u něj zmínit to, že spravuje všechny části, ohledně stisku myši a klávesnice
+view - canvas, říct že jsou dva a proč
+
+9. slide:
+
+implementace quadstromu, jak funguje, proč a jeho výhoda oproti primitivnímu prohledávání listu
+
+10. slide 
+
+popis interní funkce programu, jak je realizována implementace všech úkonů typu pohyb či úprava prvku a jak je tímto realizováno undo/redo
+
+11. slide 
+
+krátký popis ukládání do souboru a exportu do obrázku
+
+12. slide 
+
+zmínit se o možných rozšířeních a proč
