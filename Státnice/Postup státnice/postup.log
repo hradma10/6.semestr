@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  21 MAR 2024 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  22 MAR 2024 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,56 +405,56 @@ n^^S^^Pho po^^Tctu, extr^^Semy ur^^Tcit^^Sy funkce,
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 94--98
+Underfull \hbox (badness 10000) in paragraph at lines 96--100
 
  []
 
 [3]
-Overfull \hbox (4.5839pt too wide) in paragraph at lines 132--133
+Overfull \hbox (4.5839pt too wide) in paragraph at lines 145--146
 []\OT1/cmr/m/n/10 Operace s relacemi: sjed-no-cen^^S^^P, pr^^Wunik, rozd^^S^^Pl
 , re-strikce, pro-jekce, p^^Trirozen^^Se
  []
 
 
-Overfull \hbox (3.44516pt too wide) in paragraph at lines 146--147
+Overfull \hbox (3.44516pt too wide) in paragraph at lines 159--160
 []\OT1/cmr/m/n/10 Unixov^^Se opera^^Tcn^^S^^P syst^^Semy (UNIX, Linux), u^^Tziv
 atelsk^^Sa prost^^Tred^^S^^P a n^^Sapov^^Tedy 
  []
 
 [4] [5]
-Overfull \hbox (5.22296pt too wide) in paragraph at lines 223--224
+Overfull \hbox (5.22296pt too wide) in paragraph at lines 236--237
 []\OT1/cmr/m/n/10 Tvorba in-forma^^Tcn^^S^^Pch syst^^Sem^^Wu: soft-warov^^Sy pr
 o-ces, metodika v^^Syvoje, anal^^Syza
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--233
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
 
  []
 
-[6]
-Overfull \hbox (1.27856pt too wide) in paragraph at lines 240--241
+
+Overfull \hbox (1.27856pt too wide) in paragraph at lines 253--254
 [][]\OT1/cmr/m/n/10 R^^S^^Pzen^^S^^P vykon^^Sav^^San^^S^^P pro-gramu v jazyce P
 ython: bloky, cykly, v^^Tetven^^S^^P, funkce
  []
 
 
-Overfull \hbox (12.3341pt too wide) in paragraph at lines 256--257
+Overfull \hbox (12.3341pt too wide) in paragraph at lines 269--270
 []\OT1/cmr/m/n/10 Principy ob-jek-tov^^Seho pro-gramov^^San^^S^^P: za-pouzd^^Tr
 en^^S^^P, poly-mor-fis-mus a d^^Tedi^^Tcnost
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 294--301
+Underfull \hbox (badness 10000) in paragraph at lines 307--314
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--301
+Underfull \hbox (badness 10000) in paragraph at lines 307--314
 
  []
 
-[8] (./postup.aux)
+[8] [9] (./postup.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -470,10 +470,10 @@ Here is how much of TeX's memory you used:
  102i,5n,107p,475b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on postup.pdf (8 pages, 55805 bytes).
+Output written on postup.pdf (9 pages, 56430 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
