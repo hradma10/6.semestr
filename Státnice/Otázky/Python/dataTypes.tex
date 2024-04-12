@@ -1,0 +1,248 @@
+\documentclass{article}
+\usepackage{listings} % For code listings
+\usepackage{xcolor} % For defining colors
+
+% Define colors for code listing
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Define code listing style
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+	
+	\section{Introduction}
+	In computer programming, data types specify the type of data that can be stored inside a variable. For example,
+	\begin{lstlisting}[language=Python]
+		num = 24
+	\end{lstlisting}
+	Here, 24 (an integer) is assigned to the \texttt{num} variable. So the data type of \texttt{num} is of the \texttt{int} class.
+	
+	\section{Python Data Types}
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|l|l|p{6cm}|}
+			\hline
+			\textbf{Data Types} & \textbf{Classes} & \textbf{Description} \\ \hline
+			Numeric & int, float, complex & Holds numeric values \\ \hline
+			String & str & Holds a sequence of characters \\ \hline
+			Sequence & list, tuple, range & Holds a collection of items \\ \hline
+			Mapping & dict & Holds data in key-value pair form \\ \hline
+			Boolean & bool & Holds either True or False \\ \hline
+			Set & set, frozenset & Holds a collection of unique items \\ \hline
+		\end{tabular}
+		\caption{Python Data Types}
+		\label{tab:datatypes}
+	\end{table}
+	
+	Since everything is an object in Python programming, data types are actually classes and variables are instances (objects) of these classes.
+	
+	\section{Python Numeric Data Type}
+	In Python, the numeric data type is used to hold numeric values.
+	\begin{lstlisting}[language=Python]
+		num1 = 5
+		print(num1, 'is of type', type(num1))
+		
+		num2 = 2.0
+		print(num2, 'is of type', type(num2))
+		
+		num3 = 1+2j
+		print(num3, 'is of type', type(num3))
+	\end{lstlisting}
+	Output:
+	\begin{lstlisting}[language=Python]
+		5 is of type <class 'int'>
+		2.0 is of type <class 'float'>
+		(1+2j) is of type <class 'complex'>
+	\end{lstlisting}
+	In the above example, we have created three variables named \texttt{num1}, \texttt{num2}, and \texttt{num3} with values 5, 5.0, and 1+2j respectively.
+	
+	\section{Python List Data Type}
+	List is an ordered collection of similar or different types of items separated by commas and enclosed within brackets \texttt{[]}. For example,
+	\begin{lstlisting}[language=Python]
+		languages = ["Swift", "Java", "Python"]
+	\end{lstlisting}
+	...
+
+\section{Python List Data Type (Continued)}
+List is an ordered collection of similar or different types of items separated by commas and enclosed within brackets \texttt{[]}. For example,
+\begin{lstlisting}[language=Python]
+	languages = ["Swift", "Java", "Python"]
+\end{lstlisting}
+
+\subsection{Access List Items}
+To access items from a list, we use the index number (0, 1, 2, ...). For example,
+\begin{lstlisting}[language=Python]
+	languages = ["Swift", "Java", "Python"]
+	
+	% access element at index 0
+	print(languages[0])   % Swift
+	
+	% access element at index 2
+	print(languages[2])   % Python
+\end{lstlisting}
+In the above example, we have used the index values to access items from the \texttt{languages} list.
+
+\section{Python Tuple Data Type}
+Tuple is an ordered sequence of items same as a list. The only difference is that tuples are immutable. Tuples once created cannot be modified.
+
+In Python, we use the parentheses \texttt{()} to store items of a tuple. For example,
+\begin{lstlisting}[language=Python]
+	product = ('Xbox', 499.99)
+\end{lstlisting}
+
+\subsection{Access Tuple Items}
+Similar to lists, we use the index number to access tuple items in Python. For example,
+\begin{lstlisting}[language=Python]
+	% create a tuple 
+	product = ('Microsoft', 'Xbox', 499.99)
+	
+	% access element at index 0
+	print(product[0])   % Microsoft
+	
+	% access element at index 1
+	print(product[1])   % Xbox
+\end{lstlisting}
+
+\section{Python String Data Type}
+String is a sequence of characters represented by either single or double quotes. For example,
+\begin{lstlisting}[language=Python]
+	name = 'Python'
+	print(name)  
+	
+	message = 'Python for beginners'
+	print(message)
+\end{lstlisting}
+
+\section{Python Set Data Type}
+Set is an unordered collection of unique items. Set is defined by values separated by commas inside braces \texttt{\{\}}. For example,
+\begin{lstlisting}[language=Python]
+	% create a set named student_id
+	student_id = {112, 114, 116, 118, 115}
+	
+	% display student_id elements
+	print(student_id)
+	
+	% display type of student_id
+	print(type(student_id))
+\end{lstlisting}
+
+\section{Python Dictionary Data Type}
+Python dictionary is an ordered collection of items. It stores elements in key/value pairs.
+
+\subsection{Access Dictionary Values Using Keys}
+We use keys to retrieve the respective value. But not the other way around. For example,
+\begin{lstlisting}[language=Python]
+	% create a dictionary named capital_city
+	capital_city = {'Nepal': 'Kathmandu', 'Italy': 'Rome', 'England': 'London'}
+	
+	print(capital_city['Nepal'])  % prints Kathmandu
+	
+	% Throws error message
+	print(capital_city['Kathmandu'])
+\end{lstlisting}
+
+\section{Python Type Conversion}
+In programming, type conversion is the process of converting data of one type to another. There are two types of type conversion in Python.
+
+\subsection{Implicit Conversion}
+In certain situations, Python automatically converts one data type to another. This is known as implicit type conversion.
+
+\subsubsection{Example 1: Converting integer to float}
+Let's see an example where Python promotes the conversion of the lower data type (integer) to the higher data type (float) to avoid data loss.
+\begin{lstlisting}[language=Python]
+	integer_number = 123
+	float_number = 1.23
+	
+	new_number = integer_number + float_number
+	
+	% display new value and resulting data type
+	print("Value:",new_number)
+	print("Data Type:",type(new_number))
+\end{lstlisting}
+Output:
+\begin{lstlisting}[language=Python]
+	Value: 124.23
+	Data Type: <class 'float'>
+\end{lstlisting}
+In the above example, we have created two variables: \texttt{integer\_number} and \texttt{float\_number} of \texttt{int} and \texttt{float} type respectively.
+
+Then we added these two variables and stored the result in \texttt{new\_number}.
+
+As we can see, \texttt{new\_number} has the value 124.23 and is of the \texttt{float} data type.
+
+\subsubsection{Note}
+We get \texttt{TypeError}, if we try to add \texttt{str} and \texttt{int}. For example, '12' + 23. Python is not able to use Implicit Conversion in such conditions.
+
+\subsection{Explicit Conversion}
+In Explicit Type Conversion, users convert the data type of an object to the required data type.
+
+We use the built-in functions like \texttt{int()}, \texttt{float()}, \texttt{str()}, etc to perform explicit type conversion.
+
+This type of conversion is also called typecasting because the user casts (changes) the data type of the objects.
+
+\subsubsection{Example 2: Addition of string and integer Using Explicit Conversion}
+\begin{lstlisting}[language=Python]
+	num_string = '12'
+	num_integer = 23
+	
+	print("Data type of num_string before Type Casting:",type(num_string))
+	
+	% explicit type conversion
+	num_string = int(num_string)
+	
+	print("Data type of num_string after Type Casting:",type(num_string))
+	
+	num_sum = num_integer + num_string
+	
+	print("Sum:",num_sum)
+	print("Data type of num_sum:",type(num_sum))
+\end{lstlisting}
+Output:
+\begin{lstlisting}[language=Python]
+	Data type of num_string before Type Casting: <class 'str'>
+	Data type of num_string after Type Casting: <class 'int'>
+	Sum: 35
+	Data type of num_sum: <class 'int'>
+\end{lstlisting}
+In the above example, we have created two variables: \texttt{num\_string} and \texttt{num\_integer} with \texttt{str} and \texttt{int} type values respectively. Notice the code,
+
+\texttt{num\_string = int(num\_string)}
+
+Here, we have used \texttt{int()} to perform explicit type conversion of \texttt{num\_string} to integer type.
+
+After converting \texttt{num\_string} to an integer value, Python is able to add these two variables.
+
+Finally, we got the \texttt{num\_sum} value i.e 35 and data type to be \texttt{int}.
+
+\subsection{Key Points to Remember}
+\begin{itemize}
+	\item Type Conversion is the conversion of an object from one data type to another.
+	\item Implicit Type Conversion is automatically performed by the Python interpreter.
+	\item Python avoids the loss of data in Implicit Type Conversion.
+	\item Explicit Type Conversion is also called Type Casting, the data types of objects are converted using predefined functions by the user.
+	\item In Type Casting, loss of data may occur as we enforce the object to a specific data type.
+\end{itemize}
+
+\end{document}

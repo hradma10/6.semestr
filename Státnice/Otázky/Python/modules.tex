@@ -1,0 +1,215 @@
+\documentclass{article}
+\usepackage{listings} % for code snippets
+\usepackage{hyperref} % for hyperlinks
+
+\begin{document}
+	
+
+	
+	\section{Importing a Module}
+	
+	To use the functions and classes offered by a module, you have to import the module:
+	
+	\begin{lstlisting}[language=Python]
+		import math
+		
+		print(math.sqrt(10))
+	\end{lstlisting}
+	
+	The above imports the math standard module, making all of the functions in that module namespaced by the module name. It imports all functions and all classes, if any.
+	
+	You can import the module under a different name:
+	
+	\begin{lstlisting}[language=Python]
+		import math as Mathematics
+		
+		print(Mathematics.sqrt(10))
+	\end{lstlisting}
+	
+	You can import a single function, making it available without the module name namespace:
+	
+	\begin{lstlisting}[language=Python]
+		from math import sqrt
+		
+		print(sqrt(10))
+	\end{lstlisting}
+	
+	You can import a single function and make it available under a different name:
+	
+	\begin{lstlisting}[language=Python]
+		from math import cos as cosine
+		
+		print(cosine(10))
+	\end{lstlisting}
+	
+	You can import multiple modules in a row:
+	
+	\begin{lstlisting}[language=Python]
+		import os, sys, re
+	\end{lstlisting}
+	
+	You can make an import as late as in a function definition:
+	
+	\begin{lstlisting}[language=Python]
+		def sqrtTen():
+		import math
+		print(math.sqrt(10))
+	\end{lstlisting}
+	
+	Such an import only takes place when the function is called.
+	
+	You can import all functions from the module without the module namespace, using an asterisk notation:
+	
+	\begin{lstlisting}[language=Python]
+		from math import *
+		print(sqrt(10))
+	\end{lstlisting}
+	
+	However, if you do this inside a function, you get a warning in Python 2 and error in Python 3:
+	
+	\begin{lstlisting}[language=Python]
+		def sqrtTen():
+		from math import *
+		print(sqrt(10))
+	\end{lstlisting}
+	
+	You can guard for a module not found:
+	
+	\begin{lstlisting}[language=Python]
+		try:
+		import custommodule
+		except ImportError:
+		pass
+	\end{lstlisting}
+	
+	Modules can be different kinds of things:
+	
+	\begin{itemize}
+		\item Python files
+		\item Shared Objects (under Unix and Linux) with the .so suffix
+		\item DLL's (under Windows) with the .pyd suffix
+		\item Directories
+	\end{itemize}
+	
+	Modules are loaded in the order they're found, which is controlled by \texttt{sys.path}. The current directory is always on the path.
+	
+	Directories should include a file in them called \texttt{\_\_init\_\_.py}, which should probably include the other files in the directory.
+	
+	Creating a DLL that interfaces with Python is covered in another section.
+	
+	\subsection{Imported Check}
+	
+	You can check whether a module has been imported as follows:
+	
+	\begin{lstlisting}[language=Python]
+		if "re" in sys.modules:
+		print("Regular expression module is ready for use.")
+	\end{lstlisting}
+	
+	\section{Creating a Module}
+	
+	\subsection{From a File}
+	
+	The easiest way to create a module is by having a file called \texttt{mymod.py} either in a directory recognized by the \texttt{PYTHONPATH} variable or (even easier) in the same directory where you are working. If you have the following file \texttt{mymod.py}:
+	
+	\begin{lstlisting}[language=Python]
+		class Object1:
+		def __init__(self):
+		self.name = 'object 1'
+	\end{lstlisting}
+	
+	you can already import this "module" and create instances of the object \texttt{Object1}.
+	
+	\begin{lstlisting}[language=Python]
+		import mymod
+		myobject = mymod.Object1()
+		from mymod import *
+		myobject = Object1()
+	\end{lstlisting}
+	
+	\subsection{From a Directory}
+	
+	It is not feasible for larger projects to keep all classes in a single file. It is often easier to store all files in directories and load all files with one command. Each directory needs to have a \texttt{\_\_init\_\_.py} file which contains python commands that are executed upon loading the directory.
+	
+	Suppose we have two more objects called \texttt{Object2} and \texttt{Object3} and we want to load all three objects with one command. We then create a directory called \texttt{mymod} and we store three files called \texttt{Object1.py}, \texttt{Object2.py} and \texttt{Object3.py} in it. These files would then contain one object per file but this not required (although it adds clarity). We would then write the following \texttt{\_\_init\_\_.py} file:
+	
+	\begin{lstlisting}[language=Python]
+		from Object1 import *
+		from Object2 import *
+		from Object3 import *
+		
+		__all__ = ["Object1", "Object2", "Object3"]
+	\end{lstlisting}
+	
+	The first three commands tell python what to do when somebody loads the module. The last statement defining \texttt{\_\_all\_\_} tells python what to do when somebody executes \texttt{from mymod import *}. Usually we want to use parts of a module in other parts of a module, e.g. we want to use \texttt{Object1} in \texttt{Object2}. We can do this easily with an \texttt{from . import *} command as the following file \texttt{Object2.py} shows:
+	
+	\begin{lstlisting}[language=Python]
+		from . import *
+		
+		class Object2:
+		def __init__(self):
+		self.name = 'object 2'
+		self.otherObject = Object1()
+	\end{lstlisting}
+	
+	\subsection{Making a Program Usable as a Module}
+	
+	In order to make a program usable both as a standalone program to be called from a command line and as a module, it is advisable that you place all code in functions and methods, designate one function as the main one, and call then main function when \texttt{\_\_name\_\_} built-in equals '\_\_main\_\_'. The purpose of doing so is to make sure that the code you have placed in the main function is not called when your program is imported as a module; the code would be called upon import if it were placed outside of functions and methods.
+	
+	Your program, stored in \texttt{mymodule.py}, can look as follows:
+	
+	\begin{lstlisting}[language=Python]
+		def reusable_function(x, y):
+		return x + y
+		
+		def main():
+		pass
+		# Any code you like
+		
+		if __name__ == '__main__':
+		main()
+	\end{lstlisting}
+	
+	The uses of the above program can look as follows:
+	
+	\begin{lstlisting}[language=Python]
+		from mymodule import reusable_function
+		my_result = reusable_function(4, 5)
+	\end{lstlisting}
+	
+	\section{Extending Module Path}
+	
+	When import is requested, modules are searched in the directories (and zip files?) in the module path, accessible via \texttt{sys.path}, a Python list. The module path can be extended as follows:
+	
+	\begin{lstlisting}[language=Python]
+		import sys
+		sys.path.append("/My/Path/To/Module/Directory")
+		from ModuleFileName import my_function
+	\end{lstlisting}
+	
+Above, if \texttt{ModuleFileName.py} is located at \texttt{/My/Path/To/Module/Directory} and contains a definition of \texttt{my\_function}, the second line ensures that the third line actually works.
+
+	
+	\section{Module Names}
+	
+	Module names seem to be limited to alphanumeric characters and underscore; dash cannot be used. While \texttt{my-module.py} can be created and run, importing \texttt{my-module} fails. The name of a module is the name of the module file minus the .py suffix.
+	
+	Module names are case sensitive. If the module file is called \texttt{MyModule.py}, doing \texttt{import mymodule} fails while \texttt{import MyModule} is fine.
+	
+	\texttt{PEP 0008} recommends module names to be in all lowercase, with possible use of underscores.
+	
+	Examples of module names from the standard library include \texttt{math}, \texttt{sys}, \texttt{io}, \texttt{re}, \texttt{urllib}, \texttt{difflib}, and \texttt{unicodedata}.
+	
+	\section{Built-in Modules}
+	
+	For a module to be built-in is not the same as to be part of the standard library. For instance, \texttt{re} is not a built-in module but rather a module written in Python. By contrast, \texttt{\_sre} is a built-in module.
+	
+	Obtaining a list of built-in module names:
+	
+	\begin{lstlisting}[language=Python]
+		print(sys.builtin_module_names)
+		print("_sre" in sys.builtin_module_names) # True
+		print("math" in sys.builtin_module_names) # True
+	\end{lstlisting}
+	
+\end{document}
