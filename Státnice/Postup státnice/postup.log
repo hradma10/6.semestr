@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  14 APR 2024 13:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  16 APR 2024 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,35 +422,35 @@ atelsk^^Sa prost^^Tred^^S^^P a n^^Sapov^^Tedy
  []
 
 [4] [5] [6]
-Overfull \hbox (5.22296pt too wide) in paragraph at lines 251--252
+Overfull \hbox (5.22296pt too wide) in paragraph at lines 252--253
 []\OT1/cmr/m/n/10 Tvorba in-forma^^Tcn^^S^^Pch syst^^Sem^^Wu: soft-warov^^Sy pr
 o-ces, metodika v^^Syvoje, anal^^Syza
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--266
+Underfull \hbox (badness 10000) in paragraph at lines 263--267
 
  []
 
 [7]
-Overfull \hbox (1.27856pt too wide) in paragraph at lines 273--274
+Overfull \hbox (1.27856pt too wide) in paragraph at lines 274--275
 [][]\OT1/cmr/m/n/10 R^^S^^Pzen^^S^^P vykon^^Sav^^San^^S^^P pro-gramu v jazyce P
 ython: bloky, cykly, v^^Tetven^^S^^P, funkce
  []
 
 
-Overfull \hbox (12.3341pt too wide) in paragraph at lines 289--290
+Overfull \hbox (12.3341pt too wide) in paragraph at lines 290--291
 []\OT1/cmr/m/n/10 Principy ob-jek-tov^^Seho pro-gramov^^San^^S^^P: za-pouzd^^Tr
 en^^S^^P, poly-mor-fis-mus a d^^Tedi^^Tcnost
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 327--334
+Underfull \hbox (badness 10000) in paragraph at lines 328--335
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--334
+Underfull \hbox (badness 10000) in paragraph at lines 328--335
 
  []
 
@@ -470,7 +470,7 @@ Here is how much of TeX's memory you used:
  102i,5n,107p,475b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on postup.pdf (9 pages, 59071 bytes).
+Output written on postup.pdf (9 pages, 59154 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
