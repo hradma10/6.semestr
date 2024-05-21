@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  20 MAY 2024 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  21 MAY 2024 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,52 +405,78 @@ n^^S^^Pho po^^Tctu, extr^^Semy ur^^Tcit^^Sy funkce,
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 99--103
+Underfull \hbox (badness 10000) in paragraph at lines 99--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--106
 
  []
 
 [3]
-Overfull \hbox (2.27853pt too wide) in paragraph at lines 153--154
+Overfull \hbox (2.27853pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/10 Z^^Saklady pr^^Sace v Mon-goDB: iden-ti-fik^^Sator doku-mentu
 , oper^^Satory v dotazech,
  []
 
 
-Overfull \hbox (3.44516pt too wide) in paragraph at lines 166--167
+Overfull \hbox (3.44516pt too wide) in paragraph at lines 169--170
 []\OT1/cmr/m/n/10 Unixov^^Se opera^^Tcn^^S^^P syst^^Semy (UNIX, Linux), u^^Tziv
 atelsk^^Sa prost^^Tred^^S^^P a n^^Sapov^^Tedy
  []
 
 [4] [5] [6]
-Overfull \hbox (5.22296pt too wide) in paragraph at lines 259--260
+Overfull \hbox (1.3063pt too wide) in paragraph at lines 257--258
+[]\OT1/cmr/m/n/10 Z^^Sakladn^^S^^P po-jmy in-forma^^Tcn^^S^^Pch syst^^Semu: dat
+a, in-for-mace, in-forma^^Tcn^^S^^P syst^^Sem
+ []
+
+
+Overfull \hbox (5.22296pt too wide) in paragraph at lines 262--263
 []\OT1/cmr/m/n/10 Tvorba in-forma^^Tcn^^S^^Pch syst^^Sem^^Wu: soft-warov^^Sy pr
 o-ces, metodika v^^Syvoje, anal^^Syza
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 270--274
+Underfull \hbox (badness 10000) in paragraph at lines 273--280
 
  []
 
 
-Overfull \hbox (1.27856pt too wide) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 273--280
+
+ []
+
+
+Overfull \hbox (1.27856pt too wide) in paragraph at lines 286--287
 [][]\OT1/cmr/m/n/10 R^^S^^Pzen^^S^^P vykon^^Sav^^San^^S^^P pro-gramu v jazyce P
 ython: bloky, cykly, v^^Tetven^^S^^P, funkce
  []
 
 
-Overfull \hbox (12.3341pt too wide) in paragraph at lines 297--298
+Overfull \hbox (12.3341pt too wide) in paragraph at lines 302--303
 []\OT1/cmr/m/n/10 Principy ob-jek-tov^^Seho pro-gramov^^San^^S^^P: za-pouzd^^Tr
 en^^S^^P, poly-mor-fis-mus a d^^Tedi^^Tcnost
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 336--343
+Underfull \hbox (badness 10000) in paragraph at lines 341--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--343
+Underfull \hbox (badness 10000) in paragraph at lines 341--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--354
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--354
 
  []
 
@@ -470,7 +496,7 @@ Here is how much of TeX's memory you used:
  102i,5n,107p,475b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on postup.pdf (9 pages, 61462 bytes).
+Output written on postup.pdf (9 pages, 61516 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
