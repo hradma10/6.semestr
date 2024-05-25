@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  21 MAY 2024 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.20)  22 MAY 2024 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,6 +405,11 @@ n^^S^^Pho po^^Tctu, extr^^Semy ur^^Tcit^^Sy funkce,
  []
 
 [2]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 105.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 105.
+
 Underfull \hbox (badness 10000) in paragraph at lines 99--106
 
  []
@@ -461,45 +466,46 @@ en^^S^^P, poly-mor-fis-mus a d^^Tedi^^Tcnost
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 341--354
+Underfull \hbox (badness 10000) in paragraph at lines 341--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--354
+Underfull \hbox (badness 10000) in paragraph at lines 341--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--354
+Underfull \hbox (badness 10000) in paragraph at lines 341--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--354
+Underfull \hbox (badness 10000) in paragraph at lines 352--356
 
  []
 
-[9] (./postup.aux)
+[9] [10] (./postup.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12132 strings out of 474934
- 252038 string characters out of 5763814
+ 12134 strings out of 474934
+ 252066 string characters out of 5763814
  1941785 words of memory out of 5000000
- 33502 multiletter control sequences out of 15000+600000
+ 33504 multiletter control sequences out of 15000+600000
  559279 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,5n,107p,475b,518s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on postup.pdf (9 pages, 61516 bytes).
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on postup.pdf (10 pages, 70105 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
